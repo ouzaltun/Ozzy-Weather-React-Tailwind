@@ -1,13 +1,13 @@
-import { useState } from "react";
-
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <h2 className="bg-red-500  mx-auto text-center text-3xl h-screen flex justify-center text-white items-center">
-        sa
-      </h2>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+      </Routes>
     </>
   );
 }
