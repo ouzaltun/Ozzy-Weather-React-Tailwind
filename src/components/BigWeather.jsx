@@ -1,7 +1,11 @@
 import React from "react";
 
 function BigWeather() {
-  return <div>BigWeather</div>;
+  return (
+    <div>
+      <div>BigWeather</div>
+    </div>
+  );
 }
 
 export default BigWeather;
