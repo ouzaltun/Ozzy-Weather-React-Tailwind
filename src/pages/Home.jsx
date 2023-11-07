@@ -8,49 +8,49 @@ import CardWeather from "../components/CardWeather";
 
 function Home() {
   return (
-    <div class=" md:h-screen w-full bg-green-500 flex justify-center items-center">
-      <div class="grid grid-cols-12 grid-rows-6 gap-4 ">
-        <div class="col-span-12 md:col-span-8 md:row-span-2 bg-red-500">
-          <div class="h-full w-full  bg-orange-300">
-            <div className="w-[50vw] h-[20vh]">
+    <div className="md:h-screen w-full bg-green-500 flex justify-center items-center">
+      <div className="grid grid-cols-12 grid-rows-6 gap-4 ">
+        <div className="col-span-12 md:col-span-8 md:row-span-2 bg-red-500  ">
+          <div className="h-full flex justify-center items-center ">
+            <div className="h-full w-full md:w-[50vw] bg-orange-300 md:h-[20vh]">
               <BigWeather></BigWeather>
             </div>
           </div>
         </div>
-        <div class="col-span-12 md:col-span-2 md:row-span-4 col-start-1 row-start-2 bg-slate-200">
-          <div class="h-full w-full bg-amber-800">
-            <div className="h-[58vh] w-[4vw]">
+        <div className="col-span-12 md:col-span-2 md:row-span-4 col-start-1 row-start-2 bg-slate-200">
+          <div className="h-full w-full ">
+            <div className="h-full w-full  bg-amber-800 md:w-[8vw]">
               <Navbar></Navbar>
             </div>
           </div>
         </div>
-        <div class="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-7 md:row-start-3 bg-slate-200">
-          <div class="h-full w-full bg-lime-700">
-            <div className="h-[28vh] bg-lime-700 w-[42vw]">
+        <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-7 md:row-start-3 bg-slate-200">
+          <div className="h-full w-full ">
+            <div className="h-full bg-lime-700 md:w-[42vw]">
               <AreaWeather></AreaWeather>
             </div>
           </div>
         </div>
-        <div class="col-span-12 md:col-span-4 md:row-span-2 col-start-1 md:col-start-9 row-start-9 md:row-start-2 bg-slate-400">
-          <div class="h-full w-full  bg-slate-500">
-            <div className="h-[15vh] w-[30vw]">
+        <div className="col-span-12 md:col-span-4 md:row-span-2 col-start-1 md:col-start-9 row-start-9 md:row-start-2 bg-slate-400">
+          <div className="h-full w-full bg-slate-500">
+            <div className="h-full md:h-[19vh] w-full bg-red-600">
               <HourlyWeather></HourlyWeather>
             </div>
           </div>
         </div>
-        <div class="col-span-12 md:col-span-4 md:col-start-9 row-start-1 bg-slate-300">
-          <div class=" bg-blue-500">logo</div>
+        <div className="col-span-12 md:col-span-4 md:col-start-9 row-start-1 bg-slate-300">
+          <div className=" bg-blue-500">logo</div>
         </div>
-        <div class="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-11 md:row-start-5  bg-slate-600">
-          <div class="h-full w-full bg-green-400">
-            <div className=" bg-green-400 w-[42vw]">
+        <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-11 md:row-start-5  bg-slate-600">
+          <div className="h-full w-full ">
+            <div className=" h-[28vh] bg-green-400 w-[42vw]">
               <SliderWeather></SliderWeather>
             </div>
           </div>
         </div>
-        <div class="col-span-12 md:col-span-4 md:row-span-3 col-start-1 md:col-start-9 row-start-13 md:row-start-4  bg-slate-300">
-          <div class="h-full w-full bg-slate-500">
-            <div className="h-[45vh] w-[30vw] ">
+        <div className="col-span-12 md:col-span-4 md:row-span-3 col-start-1 md:col-start-9 row-start-13 md:row-start-4  bg-slate-300">
+          <div className="h-full w-full bg-slate-500">
+            <div className="h-full w-full bg-red-500  ">
               <CardWeather></CardWeather>
             </div>
           </div>
