@@ -10,47 +10,52 @@ function Home() {
   return (
     <div className="md:h-screen w-full bg-mainImage bg-cover flex justify-center items-center">
       <div className="grid grid-cols-12 grid-rows-6 gap-4 ">
-        <div className="col-span-12 md:col-span-8 md:row-span-2 bg-red-500  ">
+        <div className="col-span-12 md:col-span-8 md:row-span-2   ">
           <div className="h-full flex justify-center items-center ">
-            <div className="h-full w-full md:w-[50vw] bg-orange-300 md:h-[20vh]">
+            <div className="h-full w-full rounded-priv md:w-[50vw] bg-card-color md:h-[20vh]">
               <BigWeather></BigWeather>
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-2 md:row-span-4 col-start-1 row-start-2 bg-slate-200">
+        <div className="col-span-12 md:col-span-2 md:row-span-4 col-start-1 row-start-2 ">
           <div className="h-full w-full ">
-            <div className="h-full w-full  bg-amber-800 md:w-[8vw]">
+            <div className="h-full w-full rounded-priv  bg-card-color md:w-[8vw]">
               <Navbar></Navbar>
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-7 md:row-start-3 bg-slate-200">
+        <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-7 md:row-start-3 ">
           <div className="h-full w-full ">
-            <div className="h-full bg-lime-700 md:w-[42vw]">
+            <div className="h-full rounded-priv bg-card-color md:w-[42vw]">
               <AreaWeather></AreaWeather>
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4 md:row-span-2 col-start-1 md:col-start-9 row-start-9 md:row-start-2 bg-slate-400">
-          <div className="h-full w-full bg-slate-500">
-            <div className="h-full md:h-[19vh] w-full bg-red-600">
+        <div className="col-span-12 md:col-span-4 md:row-span-2 col-start-1 md:col-start-9 row-start-9 md:row-start-2 ">
+          <div className="h-full w-full ">
+            <div className="h-full md:h-[19vh] rounded-priv  w-full bg-card-color">
               <HourlyWeather></HourlyWeather>
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4 md:col-start-9 row-start-1 bg-slate-300">
-          <div className=" bg-blue-500">logo</div>
+        <div className="col-span-12 md:col-span-4 md:col-start-9 row-start-1 ">
+          <div className="h-full  rounded-priv flex justify-center items-center">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/dd25/1439/1400e4dad877077306c60c7b9240fa6c?Expires=1700438400&Signature=TVd~3QvDGnSu9s0tXlnNUd0CI3ikIKyG34wQjjb9jMfXR~oY-Di2JXVEfasF6-oMKFmhNrntKvsIeXqH3zZHN3U1HD-jg47hrR7ffJ6a1DcKhV5Ah8CJrc0vgYp2CDGcw50cbRAO-UF2OCmp1MKVtqhnY61CB9aOSPXmVR5J-PDE~g3sR9wtOlrjSK~COgo0JQgvsEoevlSqncR6lnB-9eMG5IrXdBupQM1uO~8o5YkFowELGebuOqlQAxmoTrv2kg8bwFQxzFKhrUwZZFU-wyesNGPsWiJqYRqymLciJkm3HhkCl0fBXHLgO7y2D9B0B0CQ8wjYOS3y4xNGcHatrg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+            />
+          </div>
         </div>
-        <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-11 md:row-start-5  bg-slate-600">
+        <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-11 md:row-start-5  ">
           <div className="h-full w-full ">
-            <div className=" h-[28vh] bg-green-400 w-[42vw]">
+            <div className=" h-[28vh] rounded-priv  bg-card-color w-[42vw]">
               <SliderWeather></SliderWeather>
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4 md:row-span-3 col-start-1 md:col-start-9 row-start-13 md:row-start-4  bg-slate-300">
-          <div className="h-full w-full bg-slate-500">
-            <div className="h-full w-full bg-red-500  ">
+        <div className="col-span-12 md:col-span-4 md:row-span-3 col-start-1 md:col-start-9 row-start-13 md:row-start-4  ">
+          <div className="h-full w-full">
+            <div className="h-full rounded-priv w-full bg-card-color  ">
               <CardWeather></CardWeather>
             </div>
           </div>
