@@ -14,6 +14,9 @@ export default {
     borderRadius: {
       priv: "27.244px",
     },
+    fontFamily: {
+      inter: ["Inter", "sans"],
+    },
   },
   plugins: [],
 };
