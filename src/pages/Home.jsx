@@ -8,7 +8,7 @@ import CardWeather from "../components/CardWeather";
 
 function Home() {
   return (
-    <div className="md:h-screen w-full bg-green-500 flex justify-center items-center">
+    <div className="md:h-screen w-full bg-mainImage bg-cover flex justify-center items-center">
       <div className="grid grid-cols-12 grid-rows-6 gap-4 ">
         <div className="col-span-12 md:col-span-8 md:row-span-2 bg-red-500  ">
           <div className="h-full flex justify-center items-center ">
