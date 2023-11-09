@@ -1,0 +1,16 @@
+{
+  "Navbar": [
+    {
+      "type": "explore",
+      "url": "/Explore.png"
+    },
+    {
+      "type": "cities",
+      "url": "/Location.png"
+    },
+    {
+      "type": "settings",
+      "url": "/Settings.png"
+    }
+  ]
+}

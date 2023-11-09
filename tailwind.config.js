@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "card-color": "rgba(196, 195, 193, 0.4)",
+        "nav-color": "#C4C3C1",
       },
     },
     backgroundImage: {
