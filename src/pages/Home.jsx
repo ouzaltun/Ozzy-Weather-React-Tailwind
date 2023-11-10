@@ -51,8 +51,8 @@ function Home() {
           </div>
         </div>
         <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-11 md:row-start-5  ">
-          <div className="">
-            <div className="rounded-priv  bg-card-color">
+          <div className="h-full w-full">
+            <div className=" h-full w-full rounded-priv  bg-card-color">
               <SliderWeather></SliderWeather>
             </div>
           </div>

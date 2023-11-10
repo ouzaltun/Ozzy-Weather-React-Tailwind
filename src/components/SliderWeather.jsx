@@ -73,7 +73,7 @@ function SliderWeather() {
   };
 
   return (
-    <div className="overflow-hidden px-2 pt-4 pb-2">
+    <div className="h-full w-full px-2 pt-4 pb-2">
       <Slider {...settings}>
         {degerler.map((e, index) => (
           <div className="px-2 ">

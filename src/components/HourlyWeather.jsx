@@ -34,7 +34,7 @@ function HourlyWeather() {
     name: hour,
     Sıcaklık: parseInt(value, 10),
   }));
-
+  debugger;
   return (
     <div className=" mx-auto w-[95%] h-[60%] ">
       <div className="flex justify-start items-center gap-x-4 pl-2 pt-2">
@@ -48,6 +48,12 @@ function HourlyWeather() {
             width={200}
             height={5}
             dataKey="Sıcaklık"
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
             stroke="#F0F0F0"
             strokeWidth={1.39}
             dot={{ fill: "#F0F0F0" }}
