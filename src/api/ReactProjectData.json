@@ -3,7 +3,7 @@
   "city": "New York",
   "type": "Thunder",
   "degree": 18,
-  "airConditions": "16::2::0.8::4",
+  "airConditions": "18::2::0.8::4",
   "forecast": {
     "08:00": "26",
     "12:00": "22",
@@ -69,6 +69,22 @@
         "degree": "13"
       },
       "saturday": {
+        "type": "sunny",
+        "degree": "18"
+      },
+      "saturda2y": {
+        "type": "sunny",
+        "degree": "18"
+      },
+      "satur1day": {
+        "type": "sunny",
+        "degree": "18"
+      },
+      "satur3day": {
+        "type": "sunny",
+        "degree": "18"
+      },
+      "satu4rday": {
         "type": "sunny",
         "degree": "18"
       }

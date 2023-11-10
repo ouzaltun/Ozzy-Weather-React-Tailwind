@@ -1,6 +1,41 @@
 import React from "react";
+import { useEffect, useState } from "react";
+import Project from "../api/ReactProjectData.json";
+import { RingLoader } from "react-spinners";
 
 function CardWeather() {
+  const [cardItem, setCardItem] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCardItem(Project);
+    }, 1000);
+  }, []);
+
+  if (!cardItem) {
+    return (
+      <div className="flex items-center justify-center h-full mt-[50%]">
+        <RingLoader color="#ffffff" size={64} />
+      </div>
+    );
+  }
+
+  const {
+    date,
+    airConditions,
+    forecast,
+    weeklyWeather: { current },
+  } = cardItem;
+
+  const [realFeel, wind, changeOfRain, uvIndex] = airConditions.split("::");
+
+  const formattedDate = new Date(date).toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: "true",
+    timeZone: "GMT",
+  });
+
   return (
     <div className="h-full">
       <div className="flex flex-col pt-[20px] justify-center items-start  pl-2 ">
@@ -19,7 +54,7 @@ function CardWeather() {
               fill="white"
             />
           </svg>
-          <p className="text-center text-[22px] ml-8">8:00PM GMT</p>
+          <p className="text-center text-[22px] ml-8">{formattedDate} GMT</p>
         </div>
         <div className="pl-2 text-[22px] font-bold">AIR CONDITIONS</div>
       </div>
@@ -61,45 +96,50 @@ function CardWeather() {
                 src="/Vector.svg"
                 alt=""
               />
-              <div className="ml-[14px]">
+              <div className="ml-[14px]  w-20 md:w-24">
                 <p className="text-[16px] md:text-[20px] font-medium ">
                   Real Feel
                 </p>
                 <span className="text-center text-[16px] md:text-[20px]">
-                  16°
+                  {realFeel}°
                 </span>
               </div>
             </div>
             <div className="flex z-50 items-center justify-center">
               <img className="!h-[38.76px]" width={42} src="/wind.svg" alt="" />
-              <div className="ml-[14px]">
+              <div className="ml-[14px] w-20 md:w-24">
                 <p className="text-[16px] md:text-[20px] font-medium ">Wind</p>
                 <span className="text-center text-[16px] md:text-[20px]">
-                  0.8 km/hr
+                  {wind} km/hr
                 </span>
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-between">
+          <div className="flex justify-between items-center">
             <div className="flex z-50 items-center justify-center">
-              <img width={42} src="/Frame.svg" alt="" />
-              <div className="ml-[14px]">
+              <img
+                className="!h-[38.76px]"
+                width={42}
+                src="/Frame.svg"
+                alt=""
+              />
+              <div className="ml-[14px] w-20 md:w-24">
                 <p className="text-[16px] md:text-[20px] font-medium ">
                   Change of Rain
                 </p>
                 <span className="text-center text-[16px] md:text-[20px]">
-                  2%
+                  {changeOfRain}%
                 </span>
               </div>
             </div>
             <div className="flex z-50 items-center justify-center">
-              <img width={42} src="/Sun.png" alt="" />
-              <div className="ml-[14px]">
+              <img className="!h-[38.76px]" width={42} src="/Sun.png" alt="" />
+              <div className="ml-[14px] w-20 md:w-24">
                 <p className="text-[16px] md:text-[20px] font-medium ">
                   UV Index
                 </p>
                 <span className="text-center text-[16px] md:text-[20px]">
-                  4
+                  {uvIndex}
                 </span>
               </div>
             </div>

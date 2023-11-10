@@ -6,9 +6,7 @@ function Navbar() {
   const [navItem, setNavItem] = useState([]);
   useEffect(() => {
     setNavItem(item.Navbar);
-    console.log(navItem);
   }, []);
-  console.log(navItem);
 
   return (
     <div className="h-[100%] grid grid-cols-3 md:grid-cols-1 justify-center items-center transition py-4 md:py-0  ">
