@@ -16,7 +16,7 @@ const data = [
   },
   {
     name: "Page C",
-    uv: 2000,
+    uv: 2600,
     pv: 9800,
     amt: 2290,
   },
@@ -38,17 +38,11 @@ const data = [
     pv: 3800,
     amt: 2500,
   },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
 ];
 
 function HourlyWeather() {
   return (
-    <div className="w-full h-[70%]">
+    <div className=" mx-auto w-[95%] h-[60%] ">
       <div className="flex justify-start items-center gap-x-4 pl-2 pt-2">
         <img className="w-[29px] h-[24px]" src="/Group.svg" alt="" />
         <div className="text-[20px]">Hourly Forecast</div>
