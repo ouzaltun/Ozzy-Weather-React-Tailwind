@@ -23,3 +23,6 @@ body {
 .recharts-default-tooltip li {
   @apply !text-white font-bold text-center;
 }
+.recharts-label-list text {
+  @apply !text-white;
+}

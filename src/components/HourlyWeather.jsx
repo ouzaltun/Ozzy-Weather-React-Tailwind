@@ -1,5 +1,12 @@
 import React from "react";
-import { LineChart, Line, ResponsiveContainer, Label, Tooltip } from "recharts";
+import {
+  LineChart,
+  Line,
+  ResponsiveContainer,
+  Label,
+  Tooltip,
+  LabelList,
+} from "recharts";
 
 const data = [
   {
@@ -38,9 +45,51 @@ const data = [
     pv: 3800,
     amt: 2500,
   },
+  {
+    name: "Page Z",
+    uv: 2390,
+    pv: 3800,
+    amt: 2500,
+  },
 ];
 
 function HourlyWeather() {
+  const CustomizedLabel = (props) => {
+    const { x, y, stroke, value } = props;
+
+    return (
+      <text
+        x={x}
+        y={y + 20}
+        dy={-4}
+        fill="#fff"
+        fontSize={9.76}
+        textAnchor="middle"
+      >
+        {value}
+      </text>
+    );
+  };
+
+  const CustomizedAxisTick = (props) => {
+    const { x, y, payload } = props;
+
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text
+          x={0}
+          y={0}
+          dy={16}
+          textAnchor="end"
+          fill="#666"
+          transform="rotate(-35)"
+        >
+          {payload.value}
+        </text>
+      </g>
+    );
+  };
+
   return (
     <div className=" mx-auto w-[95%] h-[60%] ">
       <div className="flex justify-start items-center gap-x-4 pl-2 pt-2">
@@ -59,7 +108,6 @@ function HourlyWeather() {
             dot={{ fill: "#F0F0F0" }}
           >
             <Label
-              className="bg-black-500"
               content={({ x, y, value }) => {
                 return (
                   <text x={x} y={y} fill="#F0F0F0" textAnchor="middle" dy={-10}>
@@ -68,6 +116,7 @@ function HourlyWeather() {
                 );
               }}
             />
+            <LabelList content={<CustomizedLabel />} />
           </Line>
 
           <Tooltip />
