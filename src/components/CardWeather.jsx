@@ -26,9 +26,9 @@ function CardWeather() {
 
       <div className="relative px-2">
         <div
-          className="absolute 
-            left-0 z-0 bottom-0 h-full w-full 
-            inline-table overflow-hidden
+          className=" absolute
+            right-0 left-0 w-full top-0 z-0 bottom-0 
+             overflow-y-hidden
         "
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699 320">

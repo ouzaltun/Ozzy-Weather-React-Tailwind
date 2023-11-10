@@ -17,7 +17,7 @@ function AreaWeather() {
         />
         <span className="text-[16px]">Activities in your area</span>
       </div>
-      <div className="h-full grid grid-cols-2 lg:grid-cols-4 justify-items-center items-center ">
+      <div className="h-full grid grid-cols-2 md:grid-cols-4 justify-items-center items-center ">
         {areaItem.map((e) => (
           <div className="" key={e.id}>
             <div className="py-2 ">
