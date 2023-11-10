@@ -45,7 +45,7 @@ function BigWeather() {
             </g>
           </svg>
         </div>
-        <div className="text-[40px]">Sunday | 12 Dec 2023</div>
+        <div className="text-[40px] text-center">Sunday | 12 Dec 2023</div>
       </div>
     </div>
   );
