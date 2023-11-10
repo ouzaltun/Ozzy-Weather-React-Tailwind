@@ -10,7 +10,6 @@ function SliderWeather() {
         return <img src="/sunnycloudy.svg"></img>;
       case "sunny":
         return <img src="/sunny.svg"></img>;
-
       case "rainy":
         return <img src="/rainy.svg"></img>;
       case "sunny rainy":
