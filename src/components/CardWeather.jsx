@@ -97,7 +97,7 @@ function CardWeather() {
                 alt=""
               />
               <div className="ml-[14px]  w-20 md:w-24">
-                <p className="text-[16px] md:text-[20px] font-medium ">
+                <p className="whitespace-nowrap text-[16px] md:text-[20px] font-medium ">
                   Real Feel
                 </p>
                 <span className="text-center text-[16px] md:text-[20px]">
@@ -108,7 +108,9 @@ function CardWeather() {
             <div className="flex z-50 items-center justify-center">
               <img className="!h-[38.76px]" width={42} src="/wind.svg" alt="" />
               <div className="ml-[14px] w-20 md:w-24">
-                <p className="text-[16px] md:text-[20px] font-medium ">Wind</p>
+                <p className="whitespace-nowrap text-[16px] md:text-[20px] font-medium ">
+                  Wind
+                </p>
                 <span className="text-center text-[16px] md:text-[20px]">
                   {wind} km/hr
                 </span>
@@ -124,7 +126,7 @@ function CardWeather() {
                 alt=""
               />
               <div className="ml-[14px] w-20 md:w-24">
-                <p className="text-[16px] md:text-[20px] font-medium ">
+                <p className=" whitespace-nowrap text-[16px] md:text-[20px] font-medium ">
                   Change of Rain
                 </p>
                 <span className="text-center text-[16px] md:text-[20px]">
@@ -135,7 +137,7 @@ function CardWeather() {
             <div className="flex z-50 items-center justify-center">
               <img className="!h-[38.76px]" width={42} src="/Sun.png" alt="" />
               <div className="ml-[14px] w-20 md:w-24">
-                <p className="text-[16px] md:text-[20px] font-medium ">
+                <p className=" whitespace-nowrap text-[16px] md:text-[20px] font-medium ">
                   UV Index
                 </p>
                 <span className="text-center text-[16px] md:text-[20px]">
