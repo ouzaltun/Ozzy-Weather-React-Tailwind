@@ -1,6 +1,34 @@
 import React from "react";
+import { useEffect, useState } from "react";
+import Project from "../api/ReactProjectData.json";
+import { RingLoader } from "react-spinners";
 
 function BigWeather() {
+  const [projectItem, setProjectItem] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setProjectItem(Project);
+    }, 1000);
+  }, []);
+
+  if (!projectItem) {
+    return (
+      <div className="flex items-center justify-center h-full mt-[50%]">
+        <RingLoader color="#ffffff" size={64} />
+      </div>
+    );
+  }
+
+  const { city, type, degree, date } = projectItem;
+
+  const currentDate = new Date(date);
+  const formattedDate = `${currentDate.toLocaleDateString("en-US", {
+    weekday: "long",
+  })} | ${currentDate.getDate()} ${currentDate.toLocaleDateString("en-US", {
+    month: "short",
+  })} ${currentDate.getFullYear()}`;
+
   return (
     <div className="text-white h-full px-6 py-2 ">
       <div className="flex flex-col-reverse md:flex-row h-full justify-between items-center">
@@ -20,10 +48,10 @@ function BigWeather() {
                 />
               </svg>
             </div>
-            <div className="text-[24px] font-medium ml-[10px]">New York</div>
+            <div className="text-[24px] font-medium ml-[10px]">{city}</div>
           </div>
-          <div className="text-[32.693px]">Thunder</div>
-          <div className="text-[54px]">18°C</div>
+          <div className="text-[32.693px]">{type}</div>
+          <div className="text-[54px]">{degree}°C</div>
         </div>
         <div className="">
           <svg
@@ -45,7 +73,7 @@ function BigWeather() {
             </g>
           </svg>
         </div>
-        <div className="text-[40px] text-center">Sunday | 12 Dec 2023</div>
+        <div className="text-[40px] text-center">{formattedDate}</div>
       </div>
     </div>
   );
