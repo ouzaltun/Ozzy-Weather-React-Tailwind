@@ -9,10 +9,10 @@ import CardWeather from "../components/CardWeather";
 function Home() {
   return (
     <div className="md:h-screen w-full bg-mainImage bg-cover flex justify-center  items-center">
-      <div className="grid grid-cols-12 grid-rows-6 gap-3  md:gap-4 w-[90%] ">
+      <div className="grid grid-cols-12 gap-4 w-[90%] ">
         <div className="col-span-12 md:col-span-8 md:row-span-2 ">
-          <div className="h-full flex justify-center items-center ">
-            <div className="h-full w-full   ">
+          <div className=" flex justify-center items-center ">
+            <div className="   ">
               <BigWeather></BigWeather>
             </div>
           </div>
@@ -28,23 +28,23 @@ function Home() {
           </div>
         </div>
         <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-7 md:row-start-3 ">
-          <div className="h-full w-full ">
-            <div className="h-full rounded-priv bg-card-color ">
+          <div className=" ">
+            <div className=" rounded-priv bg-card-color ">
               <AreaWeather></AreaWeather>
             </div>
           </div>
         </div>
         <div className="col-span-12 md:col-span-4 md:row-span-2 col-start-1 md:col-start-9 row-start-9 md:row-start-2 ">
-          <div className="h-full w-full ">
-            <div className="md:h-full rounded-priv md:w-full bg-card-color">
+          <div className="">
+            <div className=" rounded-priv bg-card-color">
               <HourlyWeather></HourlyWeather>
             </div>
           </div>
         </div>
         <div className="col-span-12 md:col-span-4 md:col-start-9 row-start-1 ">
-          <div className="h-full rounded-priv flex justify-center items-center">
+          <div className=" rounded-priv flex justify-center items-center">
             <img
-              className="w-full md:w-auto"
+              className=" "
               src="https://s3-alpha-sig.figma.com/img/dd25/1439/1400e4dad877077306c60c7b9240fa6c?Expires=1700438400&Signature=TVd~3QvDGnSu9s0tXlnNUd0CI3ikIKyG34wQjjb9jMfXR~oY-Di2JXVEfasF6-oMKFmhNrntKvsIeXqH3zZHN3U1HD-jg47hrR7ffJ6a1DcKhV5Ah8CJrc0vgYp2CDGcw50cbRAO-UF2OCmp1MKVtqhnY61CB9aOSPXmVR5J-PDE~g3sR9wtOlrjSK~COgo0JQgvsEoevlSqncR6lnB-9eMG5IrXdBupQM1uO~8o5YkFowELGebuOqlQAxmoTrv2kg8bwFQxzFKhrUwZZFU-wyesNGPsWiJqYRqymLciJkm3HhkCl0fBXHLgO7y2D9B0B0CQ8wjYOS3y4xNGcHatrg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
               alt=""
             />
@@ -57,9 +57,9 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4 md:row-span-3 col-start-1 md:col-start-9 row-start-13 md:row-start-4  ">
-          <div className="md:h-full md:w-full">
-            <div className=" h-full w-full rounded-priv  bg-card-color  ">
+        <div className="col-span-12 h-auto md:col-span-4 md:row-span-3 col-start-1 md:col-start-9 row-start-13 md:row-start-4  ">
+          <div className="">
+            <div className=" rounded-priv  bg-card-color  ">
               <CardWeather></CardWeather>
             </div>
           </div>
