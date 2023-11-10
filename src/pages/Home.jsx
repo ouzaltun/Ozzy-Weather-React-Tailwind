@@ -36,7 +36,7 @@ function Home() {
         </div>
         <div className="col-span-12 md:col-span-4 md:row-span-2 col-start-1 md:col-start-9 row-start-9 md:row-start-2 ">
           <div className="h-full w-full ">
-            <div className="h-full md:h-[19vh] rounded-priv w-full bg-card-color">
+            <div className="md:h-full rounded-priv md:w-full bg-card-color">
               <HourlyWeather></HourlyWeather>
             </div>
           </div>

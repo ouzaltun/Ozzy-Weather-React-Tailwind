@@ -17,3 +17,9 @@ body {
 .slick-dots {
   @apply !flex !flex-row justify-center items-end gap-x-4 mt-2;
 }
+.recharts-default-tooltip {
+  @apply !bg-[#918e92] opacity-80 transition-all rounded-priv !text-white text-center;
+}
+.recharts-default-tooltip li {
+  @apply !text-white font-bold text-center;
+}
