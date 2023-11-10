@@ -23,13 +23,18 @@ function SliderWeather() {
 
   const [data, setData] = useState(Project.weeklyWeather);
   // const data2 = [data.current];
-  const data2 = [data.previous, data.current, data.next];
+  const data2 = [data.previous];
+  const previousArray = Object.values(data.previous);
+  const currentArray = Object.values(data.current);
+  const nextArray = Object.values(data.next);
+  const degerler = previousArray.concat(currentArray, nextArray);
+
+  const keyprev = Object.keys(data.previous);
+  const keycurrent = Object.keys(data.current);
+  const keynext = Object.keys(data.next);
+  const baslik = keyprev.concat(keycurrent, keynext);
   // const data3 = Object.values(data2[0]);
   // const data4 = Object.values(data3);
-  const baslik = Object.keys(data2[0]);
-  const degerler = Object.values(data2[0]);
-
-  console.log(data2);
 
   var settings = {
     dots: true,
