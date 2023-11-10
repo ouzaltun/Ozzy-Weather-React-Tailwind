@@ -27,7 +27,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-7 md:row-start-3 ">
+        <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-7 md:row-start-3 mb-10 md:mb-0 ">
           <div className=" ">
             <div className=" rounded-priv bg-card-color ">
               <AreaWeather></AreaWeather>
@@ -41,7 +41,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4 md:col-start-9 row-start-1 ">
+        <div className="col-span-12 md:col-span-4 md:col-start-9 row-start-1 mt-10 mb:mt-0 ">
           <div className=" rounded-priv flex justify-center items-center">
             <img
               className=" "
