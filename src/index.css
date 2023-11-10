@@ -15,5 +15,5 @@ body {
   @apply flex justify-center items-center;
 }
 .slick-dots {
-  @apply !flex !flex-row justify-center items-end gap-x-4;
+  @apply !flex !flex-row justify-center items-end gap-x-4 mt-2;
 }

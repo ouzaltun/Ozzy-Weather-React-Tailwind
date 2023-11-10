@@ -20,9 +20,9 @@ function AreaWeather() {
       <div className="h-full grid grid-cols-2 lg:grid-cols-4 justify-items-center items-center ">
         {areaItem.map((e) => (
           <div className="" key={e.id}>
-            <div className="py-2">
+            <div className="py-2 ">
               <img
-                className=" transition hover:scale-90 w-[120px] md:w-[110px] rounded-[6.811px] border border-[#D9D9D9]"
+                className=" transition hover:scale-90 w-[120px] md:w-[120px] rounded-[6.811px] border border-[#D9D9D9]"
                 src={e.url}
                 alt=""
               />

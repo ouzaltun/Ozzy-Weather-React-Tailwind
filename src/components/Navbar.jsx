@@ -11,7 +11,7 @@ function Navbar() {
   console.log(navItem);
 
   return (
-    <div className="h-[100%] grid grid-cols-3 md:grid-cols-1 justify-center items-center transition  ">
+    <div className="h-[100%] grid grid-cols-3 md:grid-cols-1 justify-center items-center transition py-4 md:py-0  ">
       <div className="flex justify-center items-center hover:scale-90">
         <img width={89} src="/navbar-logo.png" alt="" />
       </div>

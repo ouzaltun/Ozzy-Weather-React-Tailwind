@@ -25,12 +25,13 @@ function CardWeather() {
       </div>
 
       <div className="relative px-2">
-        {/* <div
+        <div
           className="absolute 
             left-0 z-0 bottom-0 h-full w-full 
+            inline-table overflow-hidden
         "
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699 381">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699 320">
             <path
               d="M0 133.777C0 133.777 117.579 60.3639 143.468 58.7439C167.199 57.2588 330.083 162.635 330.083 162.635C330.083 162.635 469.236 2.95009 504.833 0.0642848C540.431 -2.82152 699 92.4124 699 92.4124V381H0V133.777Z"
               fill="url(#paint0_linear_0_87)"
@@ -50,7 +51,7 @@ function CardWeather() {
               </linearGradient>
             </defs>
           </svg>
-        </div> */}
+        </div>
         <div className="flex flex-col gap-y-4 mt-2">
           <div className="flex justify-between items-between py-2 ">
             <div className="flex z-50 items-center justify-center ">

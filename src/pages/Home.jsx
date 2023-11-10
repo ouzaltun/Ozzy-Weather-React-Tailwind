@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="md:h-screen w-full bg-mainImage bg-cover flex justify-center  items-center">
       <div className="grid grid-cols-12 grid-rows-6 gap-3  md:gap-4 w-[90%] ">
-        <div className="col-span-12 md:col-span-8 md:row-span-2   ">
+        <div className="col-span-12 md:col-span-8 md:row-span-2 ">
           <div className="h-full flex justify-center items-center ">
             <div className="h-full w-full   ">
               <BigWeather></BigWeather>
@@ -18,8 +18,11 @@ function Home() {
           </div>
         </div>
         <div className="col-span-12 md:col-span-2 md:row-span-4 col-start-1 row-start-2 ">
-          <div className="h-full w-full ">
-            <div className="h-full w-full rounded-priv  bg-card-color ">
+          <div
+            className="md:h-full 
+           "
+          >
+            <div className="md:h-full  rounded-priv  bg-card-color ">
               <Navbar></Navbar>
             </div>
           </div>
@@ -48,14 +51,14 @@ function Home() {
           </div>
         </div>
         <div className="col-span-12 md:col-span-6 md:row-span-2 col-start-1 md:col-start-3 row-start-11 md:row-start-5  ">
-          <div className="h-full w-full">
-            <div className="h-full rounded-priv  bg-card-color">
+          <div className="">
+            <div className="rounded-priv  bg-card-color">
               <SliderWeather></SliderWeather>
             </div>
           </div>
         </div>
         <div className="col-span-12 md:col-span-4 md:row-span-3 col-start-1 md:col-start-9 row-start-13 md:row-start-4  ">
-          <div className="h-full w-full">
+          <div className="md:h-full md:w-full">
             <div className=" h-full w-full rounded-priv  bg-card-color  ">
               <CardWeather></CardWeather>
             </div>
