@@ -48,7 +48,9 @@ function BigWeather() {
                 />
               </svg>
             </div>
-            <div className="text-[24px] font-medium ml-[10px]">{city}</div>
+            <div className="text-[24px] font-medium ml-[10px] whitespace-nowrap">
+              {city}
+            </div>
           </div>
           <div className="text-[32.693px]">{type}</div>
           <div className="text-[54px]">{degree}°C</div>

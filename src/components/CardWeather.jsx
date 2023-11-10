@@ -23,7 +23,7 @@ function CardWeather() {
   const {
     date,
     airConditions,
-    forecast,
+
     weeklyWeather: { current },
   } = cardItem;
 
@@ -38,7 +38,7 @@ function CardWeather() {
 
   return (
     <div className="h-full">
-      <div className="flex flex-col pt-[20px] justify-center items-start  pl-2 ">
+      <div className="flex flex-col pt-[10px] justify-center items-start  pl-2 ">
         <div className="flex justify-center items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ function CardWeather() {
             </defs>
           </svg>
         </div>
-        <div className="flex flex-col gap-y-4 mt-2">
+        <div className="flex flex-col gap-y-4 mt-2 pb-4 md:pb-0">
           <div className="flex justify-between items-between py-2 ">
             <div className="flex z-50 items-center justify-center ">
               <img
