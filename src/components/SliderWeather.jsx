@@ -1,8 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import Project from "../api/ReactProjectData.json";
-import { useEffect, useState } from "react";
-import { RingLoader } from "react-spinners";
+import { useState } from "react";
 
 function SliderWeather() {
   function name(params) {
@@ -22,7 +21,6 @@ function SliderWeather() {
   }
 
   const [data, setData] = useState(Project.weeklyWeather);
-  // const data2 = [data.current];
   const data2 = [data.previous];
   const previousArray = Object.values(data.previous);
   const currentArray = Object.values(data.current);
@@ -33,8 +31,6 @@ function SliderWeather() {
   const keycurrent = Object.keys(data.current);
   const keynext = Object.keys(data.next);
   const baslik = keyprev.concat(keycurrent, keynext);
-  // const data3 = Object.values(data2[0]);
-  // const data4 = Object.values(data3);
 
   var settings = {
     dots: true,
