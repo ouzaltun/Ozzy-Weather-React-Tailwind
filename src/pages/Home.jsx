@@ -9,7 +9,7 @@ import CardWeather from "../components/CardWeather";
 function Home() {
   return (
     <div className="md:h-screen w-full bg-mainImage bg-cover flex justify-center  items-center">
-      <div className="grid grid-cols-12 gap-4 w-[90%] ">
+      <div className="grid grid-cols-12 gap-6 md:gap-4 w-[90%] ">
         <div className="col-span-12 md:col-span-8 md:row-span-2 ">
           <div className=" flex justify-center items-center ">
             <div className="   ">
@@ -35,8 +35,8 @@ function Home() {
           </div>
         </div>
         <div className="col-span-12 md:col-span-4 md:row-span-2 col-start-1 md:col-start-9 row-start-9 md:row-start-2 ">
-          <div className="">
-            <div className=" rounded-priv bg-card-color">
+          <div className="h-full w-full mb-6 md:mb-0">
+            <div className="h-full w-full rounded-priv bg-card-color">
               <HourlyWeather></HourlyWeather>
             </div>
           </div>

@@ -62,15 +62,21 @@ function CardWeather() {
                 alt=""
               />
               <div className="ml-[14px]">
-                <p className="text-[20px] font-medium ">Real Feel</p>
-                <span className="text-center text-[20px]">16°</span>
+                <p className="text-[16px] md:text-[20px] font-medium ">
+                  Real Feel
+                </p>
+                <span className="text-center text-[16px] md:text-[20px]">
+                  16°
+                </span>
               </div>
             </div>
             <div className="flex z-50 items-center justify-center">
               <img className="!h-[38.76px]" width={42} src="/wind.svg" alt="" />
               <div className="ml-[14px]">
-                <p className="text-[20px] font-medium ">Wind</p>
-                <span className="text-center text-[20px]">0.8 km/hr</span>
+                <p className="text-[16px] md:text-[20px] font-medium ">Wind</p>
+                <span className="text-center text-[16px] md:text-[20px]">
+                  0.8 km/hr
+                </span>
               </div>
             </div>
           </div>
@@ -78,15 +84,23 @@ function CardWeather() {
             <div className="flex z-50 items-center justify-center">
               <img width={42} src="/Frame.svg" alt="" />
               <div className="ml-[14px]">
-                <p className="text-[20px] font-medium ">Change of Rain</p>
-                <span className="text-center text-[20px]">2%</span>
+                <p className="text-[16px] md:text-[20px] font-medium ">
+                  Change of Rain
+                </p>
+                <span className="text-center text-[16px] md:text-[20px]">
+                  2%
+                </span>
               </div>
             </div>
             <div className="flex z-50 items-center justify-center">
               <img width={42} src="/Sun.png" alt="" />
               <div className="ml-[14px]">
-                <p className="text-[20px] font-medium ">UV Index</p>
-                <span className="text-center text-[20px]">4</span>
+                <p className="text-[16px] md:text-[20px] font-medium ">
+                  UV Index
+                </p>
+                <span className="text-center text-[16px] md:text-[20px]">
+                  4
+                </span>
               </div>
             </div>
           </div>
