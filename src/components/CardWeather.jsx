@@ -57,7 +57,6 @@ function CardWeather() {
               <img
                 className="!h-[38.76px]"
                 width={42}
-                height={38.76}
                 src="/Vector.svg"
                 alt=""
               />
@@ -67,7 +66,7 @@ function CardWeather() {
               </div>
             </div>
             <div className="flex z-50 items-center justify-center">
-              <img width={42} src="/wind.svg" alt="" />
+              <img className="!h-[38.76px]" width={42} src="/wind.svg" alt="" />
               <div className="ml-[14px]">
                 <p className="text-[20px] font-medium ">Wind</p>
                 <span className="text-center text-[20px]">0.8 km/hr</span>
