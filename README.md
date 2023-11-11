@@ -34,6 +34,4 @@ Geri Bildirim
 Proje hakkındaki her türlü geri bildirimi veya sorularınızı email veya telefon üzerinden iletebilirsiniz.
 
 altunnoguzhan@gmail.com
-05446435143
-
 Oğuzhan Altun
