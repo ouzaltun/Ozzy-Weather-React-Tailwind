@@ -71,7 +71,7 @@ function SliderWeather() {
     <div className="h-full w-full px-2 pt-4 pb-2">
       <Slider {...settings}>
         {degerler.map((e, index) => (
-          <div className="px-2 ">
+          <div key={index} className="px-2 ">
             <div className="flex flex-col justify-center items-center gap-y-1">
               <div className="text-[12px] font-normal text-center">
                 {baslik[index]}

@@ -18,8 +18,11 @@ function Navbar() {
         <div>weather</div>
       </div>
       <div className="flex flex-col gap-y-2 md:gap-y-0  justify-center items-center text-nav-color ">
-        {navItem.map((e) => (
-          <div className="flex flex-col justify-center items-center transition hover:scale-90 ">
+        {navItem.map((e, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center transition hover:scale-90 "
+          >
             <img width={34} height={34} src={e.url} alt="" />
             <div>{e.type}</div>
           </div>
