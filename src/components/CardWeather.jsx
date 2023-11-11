@@ -4,14 +4,14 @@ import Project from "../api/ReactProjectData.json";
 import { RingLoader } from "react-spinners";
 
 function CardWeather() {
+  // Use effect ve usestate ile bilgilerin jsondan 1 saniye sonra alınması
   const [cardItem, setCardItem] = useState(null);
-
   useEffect(() => {
     setTimeout(() => {
       setCardItem(Project);
     }, 1000);
   }, []);
-
+  // cardItem state'i henüz yüklenmemişse, yüklenirken gösterilecek yükleme animasyonu ekledim
   if (!cardItem) {
     return (
       <div className="flex items-center justify-center h-full mt-[50%]">
@@ -19,16 +19,17 @@ function CardWeather() {
       </div>
     );
   }
-
+  // cardItem state'inden alınan veriler
   const {
     date,
     airConditions,
-
     weeklyWeather: { current },
   } = cardItem;
 
+  // Hava durumu detaylarından formatlanan veriler
   const [realFeel, wind, changeOfRain, uvIndex] = airConditions.split("::");
 
+  // Tarih formatlama
   const formattedDate = new Date(date).toLocaleString("en-US", {
     hour: "numeric",
     minute: "numeric",

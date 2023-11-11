@@ -5,7 +5,7 @@ function AreaWeather() {
   const [areaItem, setAreaItem] = useState([]);
   useEffect(() => {
     setAreaItem(Area.Area);
-  }, []);
+  }, []); // Use effect ve usestate ile bilgilerin jsondan alınması
 
   return (
     <div>
@@ -17,6 +17,7 @@ function AreaWeather() {
         />
         <span className="text-[16px]">Activities in your area</span>
       </div>
+      {/* Hava durumu bilgilerinin gösterildiği alan */}
       <div className="h-full grid grid-cols-2 md:grid-cols-4 justify-items-center items-center ">
         {areaItem.map((e) => (
           <div className="" key={e.id}>

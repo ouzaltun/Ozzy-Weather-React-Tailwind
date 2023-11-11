@@ -4,14 +4,14 @@ import Project from "../api/ReactProjectData.json";
 import { RingLoader } from "react-spinners";
 
 function BigWeather() {
+  // Use effect ve usestate ile bilgilerin jsondan 1 saniye sonra alınması
   const [projectItem, setProjectItem] = useState(null);
-
   useEffect(() => {
     setTimeout(() => {
       setProjectItem(Project);
     }, 1000);
   }, []);
-
+  // projectItem state'i henüz yüklenmemişse, yüklenirken gösterilecek yükleme animasyonu ekledim
   if (!projectItem) {
     return (
       <div className="flex items-center justify-center h-full mt-[50%]">
@@ -20,8 +20,10 @@ function BigWeather() {
     );
   }
 
+  // projectItem state'inden alınan veriler
   const { city, type, degree, date } = projectItem;
 
+  // Tarih formatlama
   const currentDate = new Date(date);
   const formattedDate = `${currentDate.toLocaleDateString("en-US", {
     weekday: "long",

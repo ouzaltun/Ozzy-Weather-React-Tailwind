@@ -1,9 +1,10 @@
 import React from "react";
-import Slider from "react-slick";
+import Slider from "react-slick"; // Kaydırmalı slider için react-slick kütüphanesini kullandım
 import Project from "../api/ReactProjectData.json";
 import { useState } from "react";
 
 function SliderWeather() {
+  // Jsonda type bağlı resim olmadığı için switch case ile bağladım
   function name(params) {
     switch (params) {
       case "sunny cloudy":
@@ -18,27 +19,28 @@ function SliderWeather() {
         return <img src="/thunder.svg"></img>;
     }
   }
-
+  // Veriyi içeren state
   const [data, setData] = useState(Project.weeklyWeather);
+  // Veriyi uygun hale getirmek için gerekli dizileri oluşturur
   const data2 = [data.previous];
   const previousArray = Object.values(data.previous);
   const currentArray = Object.values(data.current);
   const nextArray = Object.values(data.next);
-  const degerler = previousArray.concat(currentArray, nextArray);
-
+  const degerler = previousArray.concat(currentArray, nextArray); // previousArray.concat ile eski haftanın verileri ile şimdiki hafta ve gelecek haftanın verileri liste olarak eklendi
   const keyprev = Object.keys(data.previous);
   const keycurrent = Object.keys(data.current);
   const keynext = Object.keys(data.next);
   const baslik = keyprev.concat(keycurrent, keynext);
 
+  // Slider için ayarlar
   var settings = {
-    dots: true,
+    dots: true, //Arrows yerine dots kullandım daha modern duruyor
     arrows: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: 7, //Tüm haftayı tek bir biçimde görebilelim diye slider 7 resim gösterecek
     slidesToScroll: 7,
-    initialSlide: 7,
+    initialSlide: 7, //Bizim olduğumuz haftadan başlaması için slider'ı 7 den başlattım
     responsive: [
       {
         breakpoint: 1024,

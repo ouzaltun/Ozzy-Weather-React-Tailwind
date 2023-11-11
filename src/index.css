@@ -19,7 +19,7 @@ body {
 }
 
 .slick-dots li button:before {
-  @apply !text-[#918e92];
+  @apply !text-[#423f42];
 }
 .recharts-default-tooltip {
   @apply !bg-[#918e92] opacity-80 transition-all rounded-priv !text-white text-center;

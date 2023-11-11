@@ -6,12 +6,12 @@ import {
   Tooltip,
   LabelList,
   XAxis,
-} from "recharts";
+} from "recharts"; //Grafik gösterimi için recharts kullandım
 import { useState } from "react";
 import data2 from "../api/ReactProjectData.json";
 
 function HourlyWeather() {
-  const [item, setItem] = useState(data2.forecast);
+  const [item, setItem] = useState(data2.forecast); //jsondan alınan verilerin item'e aktarılışı
 
   const CustomizedLabel = (props) => {
     const { x, y, stroke, value } = props;
@@ -30,6 +30,7 @@ function HourlyWeather() {
     );
   };
 
+  // Grafik için kullanılacak veri formatına dönüştürme
   const data = Object.entries(item).map(([hour, value]) => ({
     name: hour,
     Sıcaklık: parseInt(value, 10),
@@ -40,8 +41,12 @@ function HourlyWeather() {
         <img className="w-[29px] h-[24px]" src="/Group.svg" alt="" />
         <div className="text-[20px]">Hourly Forecast</div>
       </div>
+
+      {/* ResponsiveContainer, grafiği ekran boyutuna uyumlu hale getirir */}
       <ResponsiveContainer height={150}>
+        {/* LineChart, verileri içeren bir çizgi grafiği oluşturur */}
         <LineChart data={data}>
+          {/* Line, grafiği çizen çizgi bileşeni */}
           <Line
             type="monotone"
             width={200}
@@ -57,13 +62,16 @@ function HourlyWeather() {
             strokeWidth={1.39}
             dot={{ fill: "#F0F0F0" }}
           >
+            {/* Etiketleri göstermek için LabelList */}
             <LabelList content={<CustomizedLabel />} />
           </Line>
+          {/* X ekseni, grafiğin altındaki saat etiketlerini içerir */}
           <XAxis
             tick={{ transform: "translate(0, 5)" }}
             stroke="#F0F0F0"
             dataKey="name"
           />
+          {/* Tooltip, grafiğe hover yapıldığında bilgi gösterir */}
           <Tooltip />
         </LineChart>
       </ResponsiveContainer>
