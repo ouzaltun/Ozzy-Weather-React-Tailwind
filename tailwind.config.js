@@ -9,7 +9,7 @@ export default {
       },
     },
     backgroundImage: {
-      mainImage: "url('main-bg.jpg')",
+      mainImage: "url('/main-bg.jpg')",
     },
     borderRadius: {
       priv: "27.244px",
