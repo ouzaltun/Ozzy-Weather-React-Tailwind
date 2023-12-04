@@ -4,14 +4,18 @@ Merhaba
 
 Bu proje, React proje ödevi için geliştirilmiş bir hava durumu uygulamasıdır. Figma tasarımından esinlenerek oluşturulan uygulama, kullanıcı dostu bir arayüz sunmak üzere tasarlanmıştır.
 
-Proje Yapısı
 Proje, aşağıdaki ana bileşenleri içerir:
 
 Navbar: Sayfa içi gezinme menüsü.
+
 BigWeather: Ana hava durumu bileşeni.
+
 AreaWeather: Lokasyona özel aktiviteleri gösteren bileşen.
+
 CardWeather: Hava durumu detaylarını içeren kart bileşeni.
+
 HourlyWeather: Saatlik hava durumu tahmini grafik bileşeni.
+
 SliderWeather: Haftalık hava durumu özeti için kaydırılabilir bileşen.
 
 Kullanılan Teknolojiler
