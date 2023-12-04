@@ -10,17 +10,13 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="h-[100%] grid grid-cols-3 md:grid-cols-1 justify-center items-center transition py-4 md:py-0  ">
-      {/* Logo bölümü */}
-      <div className="flex justify-center items-center hover:scale-90">
-        <img width={89} src="/navbar-logo.png" alt="" />
-      </div>
+    <div className="h-[100%] grid grid-cols-2 md:grid-cols-1 justify-center items-center transition py-4 md:py-0  ">
       {/* Hava durumu bölümü */}
       <div className="flex flex-col justify-center items-center hover:scale-90">
         <img width={79} src="navbar-weather.svg" alt="" />
         <div>weather</div>
       </div>
-      <div className="flex flex-col gap-y-2 md:gap-y-0  justify-center items-center text-nav-color ">
+      <div className="flex flex-col gap-y-2 md:gap-y-4  justify-center items-center text-nav-color ">
         {/* Diğer menü öğeleri */}
         {navItem.map((e, index) => (
           <div
