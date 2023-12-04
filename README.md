@@ -1,8 +1,8 @@
-# React Proje Ödevi - Oğuzhan Altun
+# React Proje - Oğuzhan Altun
 
-Merhaba SmartMaple Ailesi!
+Merhaba
 
-Bu proje, Smart Maple tarafından verilen React proje ödevi için geliştirilmiş bir hava durumu uygulamasıdır. Figma tasarımından esinlenerek oluşturulan uygulama, kullanıcı dostu bir arayüz sunmak üzere tasarlanmıştır.
+Bu proje, React proje ödevi için geliştirilmiş bir hava durumu uygulamasıdır. Figma tasarımından esinlenerek oluşturulan uygulama, kullanıcı dostu bir arayüz sunmak üzere tasarlanmıştır.
 
 Proje Yapısı
 Proje, aşağıdaki ana bileşenleri içerir:
