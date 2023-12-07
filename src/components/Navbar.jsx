@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <div className="h-[100%] grid grid-cols-2 md:grid-cols-1 justify-center items-center transition py-4 md:py-0  ">
       {/* Hava durumu bölümü */}
-      <div className="flex flex-col justify-center items-center hover:scale-90">
+      <div className="flex flex-col justify-center items-center hover:scale-90 cursor-pointer">
         <img width={79} src="navbar-weather.svg" alt="" />
         <div>weather</div>
       </div>
@@ -21,7 +21,7 @@ function Navbar() {
         {navItem.map((e, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center transition hover:scale-90 "
+            className="flex flex-col justify-center items-center transition hover:scale-90 cursor-pointer "
           >
             <img width={34} height={34} src={e.url} alt="" />
             <div>{e.type}</div>
