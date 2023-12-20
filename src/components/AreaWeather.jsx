@@ -9,13 +9,14 @@ function AreaWeather() {
 
   return (
     <div>
-      <div className="flex justify-start items-center pl-[30px] pt-4">
+      <div className="flex justify-start gap-x-3 items-center pt-4 pl-4 pb-2 ">
         <img
+          className="w-[25px] h-[28px]"
           src="/Heart.png
         "
           alt=""
         />
-        <span className="text-[16px]">Activities in your area</span>
+        <span className="text-[20px]">Activities in your area</span>
       </div>
       {/* Hava durumu bilgilerinin gösterildiği alan */}
       <div className="h-full grid grid-cols-2 md:grid-cols-4 justify-items-center items-center ">

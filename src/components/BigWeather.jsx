@@ -25,12 +25,15 @@ function BigWeather() {
 
   // Tarih formatlama
   const currentDate = new Date(date);
+  console.log(currentDate);
+
   const formattedDate = `${currentDate.toLocaleDateString("en-US", {
     weekday: "long",
   })} | ${currentDate.getDate()} ${currentDate.toLocaleDateString("en-US", {
     month: "short",
   })} ${currentDate.getFullYear()}`;
 
+  console.log(formattedDate);
   return (
     <div className="text-white h-full px-6 py-2 ">
       <div className="flex flex-col-reverse md:flex-row h-full justify-between items-center">

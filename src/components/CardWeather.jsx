@@ -26,27 +26,27 @@ function CardWeather() {
     weeklyWeather: { current },
   } = cardItem;
 
+  console.log(date);
   // Hava durumu detaylarından formatlanan veriler
   const [realFeel, wind, changeOfRain, uvIndex] = airConditions.split("::");
 
   // Tarih formatlama
-  const formattedDate = new Date(date)
-    .toLocaleString("en-US", {
-      hour: "numeric",
-      minute: "numeric",
-      hour12: "true",
-      timeZone: "GMT",
-    })
-    .replace(/-/g, "/");
+  const formattedDate = new Date(date).toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: "true",
+    timeZone: "GMT",
+  });
   console.log(formattedDate);
+
   return (
     <div className="h-full">
       <div className="flex flex-col pt-[10px] justify-center items-start  pl-2 ">
-        <div className="flex justify-center items-center ">
+        <div className="flex justify-start items-center gap-x-3 pl-2 pt-2 pb-2 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="45"
-            height="55"
+            width="30"
+            height="30"
             viewBox="0 0 59 60"
             fill="none"
           >
@@ -55,12 +55,13 @@ function CardWeather() {
               fill="white"
             />
           </svg>
-          <p className="text-center text-[22px] ml-8">{formattedDate} GMT</p>
+
+          <p className="text-center text-[20px]">{formattedDate} GMT</p>
         </div>
         <div className="pl-2 text-[22px] font-bold">AIR CONDITIONS</div>
       </div>
 
-      <div className="relative px-2">
+      <div className="relative md:px-1 xl:px-10 px-6">
         <div
           className=" absolute
             right-0 left-0 w-full top-0 z-0 bottom-0 

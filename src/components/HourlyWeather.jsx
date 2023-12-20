@@ -36,9 +36,9 @@ function HourlyWeather() {
     Sıcaklık: parseInt(value, 10),
   }));
   return (
-    <div className=" mx-auto w-[95%] h-[60%] ">
-      <div className="flex justify-start items-center gap-x-4 pl-2 pt-2">
-        <img className="w-[29px] h-[24px]" src="/Group.svg" alt="" />
+    <div className=" pt-[10px] justify-center items-start mx-auto w-[95%] h-[60%] ">
+      <div className="flex justify-start items-center gap-x-3 pt-2 pl-2 pb-2 xl:pl-0">
+        <img className="w-[25px] h-[28px]" src="/Group.svg" alt="" />
         <div className="text-[20px]">Hourly Forecast</div>
       </div>
 
