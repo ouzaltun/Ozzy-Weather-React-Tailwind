@@ -25,20 +25,17 @@ function CardWeather() {
     airConditions,
     weeklyWeather: { current },
   } = cardItem;
-  console.log(date);
 
   // Hava durumu detaylarından formatlanan veriler
   const [realFeel, wind, changeOfRain, uvIndex] = airConditions.split("::");
 
   // Tarih formatlama
-  const options = {
+  const formattedDate = new Date(date).toLocaleString("en-US", {
     hour: "numeric",
     minute: "numeric",
-    hour12: true,
-  };
-  const formattedDate = new Intl.DateTimeFormat("en-US", options).format(
-    new Date(date)
-  );
+    hour12: "true",
+    timeZone: "GMT",
+  });
 
   return (
     <div className="h-full">
