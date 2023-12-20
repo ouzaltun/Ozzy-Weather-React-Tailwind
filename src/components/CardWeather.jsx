@@ -30,17 +30,12 @@ function CardWeather() {
   const [realFeel, wind, changeOfRain, uvIndex] = airConditions.split("::");
 
   // Tarih formatlama
-  const rawDate = new Date(date);
-  const options = {
+  const formattedDate = new Date(date).toLocaleString("en-US", {
     hour: "numeric",
     minute: "numeric",
-    hour12: true,
+    hour12: "true",
     timeZone: "GMT",
-  };
-
-  const formattedDate = new Intl.DateTimeFormat("en-US", options).format(
-    rawDate
-  );
+  });
 
   return (
     <div className="h-full">
