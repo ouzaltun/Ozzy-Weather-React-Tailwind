@@ -47,7 +47,7 @@ function SliderWeather() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 5,
-          slidesToScroll: 3,
+          slidesToScroll: 4,
           infinite: false,
           dots: true,
         },
