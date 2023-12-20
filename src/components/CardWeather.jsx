@@ -29,14 +29,18 @@ function CardWeather() {
   // Hava durumu detaylarından formatlanan veriler
   const [realFeel, wind, changeOfRain, uvIndex] = airConditions.split("::");
 
-  console.log(date);
   // Tarih formatlama
-  const formattedDate = new Intl.DateTimeFormat("en-US", {
+  const rawDate = new Date(date);
+  const options = {
     hour: "numeric",
     minute: "numeric",
     hour12: true,
     timeZone: "GMT",
-  }).format(new Date(date));
+  };
+
+  const formattedDate = new Intl.DateTimeFormat("en-US", options).format(
+    rawDate
+  );
 
   return (
     <div className="h-full">
