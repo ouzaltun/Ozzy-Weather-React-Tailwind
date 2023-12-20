@@ -25,11 +25,35 @@ function BigWeather() {
 
   // Tarih formatlama
   const currentDate = new Date(date);
-  const formattedDate = `${currentDate.toLocaleDateString("en-US", {
-    weekday: "long",
-  })} | ${currentDate.getDate()} ${currentDate.toLocaleDateString("en-US", {
-    month: "short",
-  })} ${currentDate.getFullYear()}`;
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  const formattedDate = `${
+    daysOfWeek[currentDate.getDay()]
+  } | ${currentDate.getDate()} ${
+    months[currentDate.getMonth()]
+  } ${currentDate.getFullYear()}`;
 
   return (
     <div className="text-white h-full px-6 py-2 ">
