@@ -15,8 +15,8 @@
   "weeklyWeather": {
     "previous": {
       "sunday": {
-        "type": "sunny cloudy",
-        "degree": "18"
+        "type": "sunny",
+        "degree": "13"
       },
       "monday": {
         "type": "sunny cloudy",
@@ -45,16 +45,16 @@
     },
     "current": {
       "sunday": {
-        "type": "thunder",
-        "degree": "18"
+        "type": "sunny cloudy",
+        "degree": "25"
       },
       "monday": {
         "type": "sunny cloudy",
         "degree": "24"
       },
       "tuesday": {
-        "type": "sunny cloudy",
-        "degree": "25"
+        "type": "thunder",
+        "degree": "18"
       },
       "wednesday": {
         "type": "rainy",

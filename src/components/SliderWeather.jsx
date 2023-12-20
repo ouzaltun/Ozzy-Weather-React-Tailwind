@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick"; // Kaydırmalı slider için react-slick kütüphanesini kullandım
 import Project from "../api/ReactProjectData.json";
 import { useState } from "react";
+import classNames from "classnames";
 
 function SliderWeather() {
   // Jsonda type bağlı resim olmadığı için switch case ile bağladım
@@ -54,16 +55,17 @@ function SliderWeather() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          initialSlide: 2,
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          initialSlide: 7,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          initialSlide: 7,
         },
       },
     ],
@@ -73,7 +75,11 @@ function SliderWeather() {
     <div className="h-full w-full px-2 pt-4 pb-2">
       <Slider {...settings}>
         {degerler.map((e, index) => (
-          <div key={index} className="px-2 ">
+          <div
+            key={index}
+            className={`px-2 ${index === 9 ? "border rounded-priv" : ""}`}
+          >
+            {console.log(index)}
             <div className="flex flex-col justify-center items-center gap-y-1">
               <div className="text-[12px] font-normal text-center">
                 {baslik[index]}

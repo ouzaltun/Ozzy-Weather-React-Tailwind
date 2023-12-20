@@ -23,7 +23,7 @@ function AreaWeather() {
           <div className="" key={e.id}>
             <div className="py-2 ">
               <img
-                className=" transition hover:scale-90 w-[120px] md:w-[120px] rounded-[6.811px] border border-[#D9D9D9]"
+                className=" transition hover:scale-95 w-[120px] md:w-[90px] xl:w-[120px] rounded-[6.811px] border border-[#D9D9D9]"
                 src={e.url}
                 alt=""
               />

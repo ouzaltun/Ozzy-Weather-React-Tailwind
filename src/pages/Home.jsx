@@ -55,18 +55,21 @@ function Home() {
             {/* Logo, sayfanın sağ üst kısmında gösterilir */}
             <div className="flex gap-x-10">
               <SocialIcon
+                className="hover:scale-95 transition-all"
                 target="_blank"
                 bgColor="#c4c3c1"
                 fgColor="#000"
                 url="https://github.com/ouzaltun/Ozzy-Weather-React-Tailwind"
               ></SocialIcon>
               <SocialIcon
+                className="hover:scale-95 transition-all"
                 target="_blank"
                 bgColor="#c4c3c1"
                 fgColor="#000"
                 url="https://www.linkedin.com/in/altunoguzhan/"
               ></SocialIcon>
               <SocialIcon
+                className="hover:scale-95 transition-all "
                 target="_blank"
                 bgColor="#c4c3c1"
                 fgColor="#000"

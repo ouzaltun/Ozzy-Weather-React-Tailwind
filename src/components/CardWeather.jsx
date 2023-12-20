@@ -90,27 +90,32 @@ function CardWeather() {
           <div className="flex justify-between items-between py-2 ">
             <div className="flex z-50 items-center justify-center ">
               <img
-                className="!h-[38.76px]"
+                className="md:hidden xl:block !h-[38.76px]"
                 width={42}
                 src="/Vector.svg"
                 alt=""
               />
               <div className="ml-[14px]  w-20 md:w-24">
-                <p className="whitespace-nowrap text-[16px] md:text-[20px] font-medium ">
+                <p className="whitespace-nowrap text-[16px] md:text-[18px] font-medium ">
                   Real Feel
                 </p>
-                <span className="text-center text-[16px] md:text-[20px]">
+                <span className="text-center text-[16px] md:text-[18px]">
                   {realFeel}°
                 </span>
               </div>
             </div>
             <div className="flex z-50 items-center justify-center">
-              <img className="!h-[38.76px]" width={42} src="/wind.svg" alt="" />
+              <img
+                className="!h-[38.76px] md:hidden xl:block"
+                width={42}
+                src="/wind.svg"
+                alt=""
+              />
               <div className="ml-[14px] w-20 md:w-24">
-                <p className="whitespace-nowrap text-[16px] md:text-[20px] font-medium ">
+                <p className="whitespace-nowrap text-[16px] md:text-[18px] font-medium ">
                   Wind
                 </p>
-                <span className="text-center text-[16px] md:text-[20px]">
+                <span className="text-center text-[16px] md:text-[18px]">
                   {wind} km/hr
                 </span>
               </div>
@@ -119,27 +124,32 @@ function CardWeather() {
           <div className="flex justify-between items-center">
             <div className="flex z-50 items-center justify-center">
               <img
-                className="!h-[38.76px]"
+                className="!h-[38.76px] md:hidden xl:block"
                 width={42}
                 src="/Frame.svg"
                 alt=""
               />
               <div className="ml-[14px] w-20 md:w-24">
-                <p className=" whitespace-nowrap text-[16px] md:text-[20px] font-medium ">
+                <p className=" whitespace-nowrap text-[16px] md:text-[18px] font-medium ">
                   Change of Rain
                 </p>
-                <span className="text-center text-[16px] md:text-[20px]">
+                <span className="text-center text-[16px] md:text-[18px]">
                   {changeOfRain}%
                 </span>
               </div>
             </div>
             <div className="flex z-50 items-center justify-center">
-              <img className="!h-[38.76px]" width={42} src="/Sun.png" alt="" />
+              <img
+                className="!h-[38.76px] md:hidden xl:block"
+                width={42}
+                src="/Sun.png"
+                alt=""
+              />
               <div className="ml-[14px] w-20 md:w-24">
-                <p className=" whitespace-nowrap text-[16px] md:text-[20px] font-medium ">
+                <p className=" whitespace-nowrap text-[16px] md:text-[18px] font-medium ">
                   UV Index
                 </p>
-                <span className="text-center text-[16px] md:text-[20px]">
+                <span className="text-center text-[16px] md:text-[18px]">
                   {uvIndex}
                 </span>
               </div>
