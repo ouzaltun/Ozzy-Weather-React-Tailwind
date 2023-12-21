@@ -38,6 +38,7 @@ function SliderWeather() {
     dots: true, //Arrows yerine dots kullandım daha modern duruyor
     arrows: false,
     infinite: false,
+    autoplay: true,
     speed: 500,
     slidesToShow: 7, //Tüm haftayı tek bir biçimde görebilelim diye slider 7 resim gösterecek
     slidesToScroll: 7,
